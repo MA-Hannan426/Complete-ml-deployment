@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: mlproject
+Version: 0.1.0
+Summary: A complete machine learning deployment project
+Home-page: https://github.com/MA-Hannan426/Complete-ml-deployment
+Author: MA-Hannan426
+Author-email: ma.hannan230@gmail.com
+Project-URL: Bug Tracker, https://github.com/MA-Hannan426/Complete-ml-deployment/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
+
+# Complete-ml-deployment
+This is a End-to-End ML project
+
+
+  git config --global user.email "ma.hannan230@gmail.com"
+  git config --global user.name "MA-Hannan426"
