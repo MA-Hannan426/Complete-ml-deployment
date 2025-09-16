@@ -3,9 +3,9 @@ notebook
 numpy
 scikit-learn
 matplotlib
-python-box==6.0.2
+python-box[all]~=7.0
 pyYAML
-ensure==1.0.2
+ensure
 joblib
 types-PyYAML
 Flask
