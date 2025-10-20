@@ -1,0 +1,5 @@
+[2025-10-19 22:15:24,559: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-19 22:15:24,573: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-19 22:15:24,590: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-19 22:15:24,593: INFO: common]: created directory at: artifacts
+[2025-10-19 22:15:24,595: INFO: common]: created directory at: artifacts/data_validation
