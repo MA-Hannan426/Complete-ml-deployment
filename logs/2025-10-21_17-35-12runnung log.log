@@ -1,0 +1,120 @@
+[2025-10-21 17:35:17,312: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-21 17:35:17,320: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 17:35:17,322: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 17:35:17,326: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 17:35:17,328: INFO: common]: created directory at: artifacts
+[2025-10-21 17:35:17,329: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-21 17:35:36,165: INFO: data_ingestion]: File: artifacts\data_ingestion\data.zip downloaded with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: F851:31637E:4155F20:49516B6:68F77E16
+Accept-Ranges: bytes
+Date: Tue, 21 Oct 2025 12:35:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mrs10555-MRS
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1761050135.940406,VS0,VE174
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0c1db2266356f51c149e900ab83f25c31235e90d
+Expires: Tue, 21 Oct 2025 12:40:35 GMT
+Source-Age: 0
+
+
+[2025-10-21 17:35:36,227: INFO: data_ingestion]: File extracted to artifacts\data_ingestion
+[2025-10-21 17:35:36,229: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-21 17:35:36,230: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-21 17:35:36,243: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 17:35:36,249: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 17:35:36,256: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 17:35:36,259: INFO: common]: created directory at: artifacts
+[2025-10-21 17:35:36,262: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-21 17:35:36,360: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-21 17:35:36,362: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-21 17:35:36,400: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 17:35:36,404: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 17:35:36,417: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 17:35:36,420: INFO: common]: created directory at: artifacts
+[2025-10-21 17:35:36,422: INFO: common]: created directory at: artifacts/data_transformation
+[2025-10-21 17:35:36,506: INFO: data_transformation]: Splited data into training and test sets
+[2025-10-21 17:35:36,507: INFO: data_transformation]: (1199, 12)
+[2025-10-21 17:35:36,508: INFO: data_transformation]: (400, 12)
+[2025-10-21 17:35:36,510: INFO: main]: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+
+[2025-10-21 17:35:36,510: INFO: main]: >>>>>> Stage Model Trainer Stage started <<<<<<
+[2025-10-21 17:35:36,521: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 17:35:36,525: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 17:35:36,534: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 17:35:36,537: INFO: common]: created directory at: artifacts
+[2025-10-21 17:35:36,539: INFO: common]: created directory at: artifacts/model_trainer
+[2025-10-21 17:35:36,540: ERROR: main]: "'ConfigBox' object has no attribute 'random_state'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'random_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'random_state'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'random_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'random_state'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'random_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'random_state'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'random_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Complete-ml-project\Complete-ml-deployment\main.py", line 48, in <module>
+    model_training_pipeline.main()
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_04_model_trainer.py", line 13, in main
+    model_trainer_config = config.get_model_trainer_config()
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\config\configuration.py", line 85, in get_model_trainer_config
+    random_state=params.random_state
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'random_state'"

@@ -1,0 +1,16 @@
+[2025-10-21 11:39:29,313: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 11:39:29,341: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 11:39:29,368: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 11:39:29,372: INFO: common]: created directory at: artifacts
+[2025-10-21 11:39:29,377: INFO: common]: created directory at: artifacts/data_transformation
+[2025-10-21 11:39:29,495: INFO: 2566798316]: Splited data into training and test sets
+[2025-10-21 11:39:29,497: INFO: 2566798316]: (1199, 12)
+[2025-10-21 11:39:29,498: INFO: 2566798316]: (400, 12)
+[2025-10-21 12:13:29,474: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 12:13:29,481: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 12:13:29,496: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 12:13:29,502: INFO: common]: created directory at: artifacts
+[2025-10-21 12:13:29,508: INFO: common]: created directory at: artifacts/data_transformation
+[2025-10-21 12:13:29,584: INFO: 2566798316]: Splited data into training and test sets
+[2025-10-21 12:13:29,589: INFO: 2566798316]: (1199, 12)
+[2025-10-21 12:13:29,596: INFO: 2566798316]: (400, 12)

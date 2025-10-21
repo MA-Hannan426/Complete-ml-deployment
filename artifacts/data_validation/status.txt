@@ -1,0 +1,2 @@
+column Validation status: True
+Data Type Validation Status: True
