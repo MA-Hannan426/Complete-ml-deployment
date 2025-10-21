@@ -1,0 +1,61 @@
+[2025-10-21 12:17:18,008: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-21 12:17:18,016: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 12:17:18,018: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 12:17:18,023: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 12:17:18,025: INFO: common]: created directory at: artifacts
+[2025-10-21 12:17:18,027: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-21 12:17:31,246: INFO: data_ingestion]: File: artifacts\data_ingestion\data.zip downloaded with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 39EA:20B854:3E2C335:45AAB95:68F7304C
+Accept-Ranges: bytes
+Date: Tue, 21 Oct 2025 07:17:29 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mrs1050106-MRS
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1761031050.851830,VS0,VE139
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3a2774245774e7d5b8fb0d0d4b31c7eed11b69c9
+Expires: Tue, 21 Oct 2025 07:22:29 GMT
+Source-Age: 0
+
+
+[2025-10-21 12:17:31,311: INFO: data_ingestion]: File extracted to artifacts\data_ingestion
+[2025-10-21 12:17:31,312: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-21 12:17:31,313: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-21 12:17:31,326: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 12:17:31,330: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 12:17:31,341: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 12:17:31,344: INFO: common]: created directory at: artifacts
+[2025-10-21 12:17:31,346: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-21 12:17:31,450: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-21 12:17:31,451: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-21 12:17:31,457: ERROR: stage_03_data_transformation]: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid
+Traceback (most recent call last):
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_03_data_transformation.py", line 24, in main
+    raise Exception("Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid")
+Exception: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid
+[2025-10-21 12:17:31,459: ERROR: main]: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Complete-ml-project\Complete-ml-deployment\main.py", line 37, in <module>
+    Data_Transformation.main()
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_03_data_transformation.py", line 28, in main
+    raise e
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_03_data_transformation.py", line 24, in main
+    raise Exception("Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid")
+Exception: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid

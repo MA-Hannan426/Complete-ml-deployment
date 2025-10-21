@@ -1,0 +1,35 @@
+[2025-10-21 12:12:50,047: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-21 12:12:50,054: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 12:12:50,056: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 12:12:50,061: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 12:12:50,062: INFO: common]: created directory at: artifacts
+[2025-10-21 12:12:50,063: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-21 12:12:50,064: INFO: data_ingestion]: File already exists of size: ~ 23 KB
+[2025-10-21 12:12:50,072: INFO: data_ingestion]: File extracted to artifacts\data_ingestion
+[2025-10-21 12:12:50,072: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-21 12:12:50,073: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-21 12:12:50,082: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 12:12:50,083: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 12:12:50,087: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 12:12:50,089: INFO: common]: created directory at: artifacts
+[2025-10-21 12:12:50,091: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-21 12:12:50,152: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-21 12:12:50,152: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-21 12:12:50,156: ERROR: stage_03_data_transformation]: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid
+Traceback (most recent call last):
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_03_data_transformation.py", line 24, in main
+    raise Exception("Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid")
+Exception: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid
+[2025-10-21 12:12:50,157: ERROR: main]: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Complete-ml-project\Complete-ml-deployment\main.py", line 37, in <module>
+    Data_Transformation.main()
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_03_data_transformation.py", line 28, in main
+    raise e
+  File "c:\users\dell\documents\complete-ml-project\complete-ml-deployment\src\mlproject\pipeline\stage_03_data_transformation.py", line 24, in main
+    raise Exception("Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid")
+Exception: Data Validation Failed. Cannot proceed to Data Transformation, as the schema is not valid

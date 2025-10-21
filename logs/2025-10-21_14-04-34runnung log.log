@@ -1,0 +1,32 @@
+[2025-10-21 14:04:39,048: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-21 14:04:39,056: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 14:04:39,058: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 14:04:39,063: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 14:04:39,064: INFO: common]: created directory at: artifacts
+[2025-10-21 14:04:39,066: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-21 14:04:39,067: INFO: data_ingestion]: File already exists of size: ~ 23 KB
+[2025-10-21 14:04:39,076: INFO: data_ingestion]: File extracted to artifacts\data_ingestion
+[2025-10-21 14:04:39,077: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-21 14:04:39,078: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-21 14:04:39,085: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 14:04:39,087: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 14:04:39,091: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 14:04:39,093: INFO: common]: created directory at: artifacts
+[2025-10-21 14:04:39,094: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-21 14:04:39,156: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-21 14:04:39,157: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-21 14:04:39,166: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-21 14:04:39,168: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-21 14:04:39,173: INFO: common]: yaml file: schema.yaml loaded successfully
+[2025-10-21 14:04:39,175: INFO: common]: created directory at: artifacts
+[2025-10-21 14:04:39,177: INFO: common]: created directory at: artifacts/data_transformation
+[2025-10-21 14:04:39,230: INFO: data_transformation]: Splited data into training and test sets
+[2025-10-21 14:04:39,230: INFO: data_transformation]: (1199, 12)
+[2025-10-21 14:04:39,231: INFO: data_transformation]: (400, 12)
+[2025-10-21 14:04:39,232: INFO: main]: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+
